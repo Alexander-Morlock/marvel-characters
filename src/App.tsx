@@ -1,14 +1,19 @@
 import React from "react";
-import Container from "./components/container";
-import Footer from "./components/footer";
-import Header from "./components/header";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import CharacterPage from "./components/character-page";
+import MainPage from "./components/main-page";
+import { Provider } from "react-redux";
+import { store } from "./store";
 
 const App: React.FC = () => (
-  <>
-    <Header />
-    <Container>Content...</Container>
-    <Footer />
-  </>
+  <Provider store={store}>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<MainPage />} />
+        <Route path=":id" element={<CharacterPage />} />
+      </Routes>
+    </BrowserRouter>
+  </Provider>
 );
 
 export default App;

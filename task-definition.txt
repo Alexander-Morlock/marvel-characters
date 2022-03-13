@@ -1,0 +1,18 @@
+Task definition:
+1. Create a new project using ReactJS or Angular stacks. Below requirements for stacks:
+● ReactJS with Redux;
+● Angular 2+ with NgRx or NgXs;
+● Typescript is mandatory.
+2. Create a main page with a list of Marvel's characters using the open Marvel API
+(https://developer.marvel.com/docs). Each row with a character should have an avatar, name
+and description. List can have infinity scrolling or pagination at the bottom for loading new
+characters.
+3. Add page with additional information about character (use routing). Show his comics,
+stories, events, and series.
+4. Design of pages is not so important, you can create it by your vision. Don't forget about
+responsiveness (pages should be prepared for comfortable use by mobile devices). You can
+use popular dependencies. Also you can be creative to show your knowledge.
+5. Upload project to GitHub (or GitLab/Bitbucket).
+Optional:
+1. Add search characters by characters names.
+2. Write tests for y
