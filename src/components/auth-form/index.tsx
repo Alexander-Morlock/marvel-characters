@@ -3,9 +3,12 @@ import { useAppDispatch } from "../hooks";
 import { setKeys } from "../../store/reducer";
 import cx from "classnames";
 
+const PRIVATE_KEY = "ebb6f2f2eb1e9d6ff9357b3cff8fb13541a55332";
+const PUBLIC_KEY = "ef7ae587dc884097a907f7d07d6c25b2";
+
 const AuthForm: React.FC = () => {
-  const [privateKeyValue, setPrivateKeyValue] = useState("");
-  const [publicKeyValue, setPublicKeyValue] = useState("");
+  const [privateKeyValue, setPrivateKeyValue] = useState(PRIVATE_KEY);
+  const [publicKeyValue, setPublicKeyValue] = useState(PUBLIC_KEY);
 
   const isSubmitDisabled = !publicKeyValue || !privateKeyValue;
 
